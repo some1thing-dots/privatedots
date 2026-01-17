@@ -1,0 +1,84 @@
+/* ----------- 💫 https://github.com/JaKooLit 💫 -------- */
+
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "padding": {
+            "top": 2,
+
+        },
+        "type": "small",
+   "color": {
+            "1": "white",
+            "2": "black",
+        }
+    },
+    "display": {
+        "separator": " -> "
+    },
+    "modules": [
+        "break",
+        {
+            "type": "title",
+            "keyWidth": 10,
+			"format": "         {#black}{1}@{2}{#}",
+			"keyColor":"black"
+        },
+        {
+            "type": "custom",
+            "format": " ──────────────────────────── "
+        },    
+        {
+            "type": "Kernel",
+            "key": "Kernel ",
+            "keyColor": "black"
+        },
+        {
+            "type": "wm",
+            "key": "WM/DE",
+            "keyColor": "black"
+        },
+        {
+            "type": "shell",
+            "key": "Shell",
+            "keyColor": "black"
+        },
+        {
+            "type": "Terminal",
+            "key": "Terminal",
+            "keyColor": "black"
+        },
+        {
+            "type": "packages",
+            "key": "Packages",
+            "keyColor": "black"
+        },
+        {
+            "type": "memory",
+            "key": "RAM",
+            "keyColor": "black",
+            // format: used / total
+            "format": "{1} / {2}"
+        },
+        {
+            "type": "uptime",
+            "key": "Uptime",
+            "keyColor": "black"
+        },
+        {
+            "type": "command",
+            "key": "Installed for",
+            "keyColor": "black",
+            "text": "echo $(( ($(date +%s) - $(stat -c %W /)) / 86400 )) days"
+        },
+        {
+            "type": "custom",
+            "format": " ──────────────────────────── "
+        },
+        {
+            "type": "custom",
+            "format": "   \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m  \u001b[90m "
+        },
+		"break"
+    ]
+}
